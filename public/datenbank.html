@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="datenbank">
+
+
+    <div class="content">
+
+        <h2>Quizfragenkatalog</h2>
+        <button onclick="logout()">Abmelden</button>
+        <div id="loginStatus">Überprüfe den Anmeldestatus...</div>
+        <div class="#">
+            <input type="file" id="fileInput" />
+            <button onclick="uploadFile()">Ausgewählte Datei hochladen</button>
+            <p id="status"></p>
+        </div>
+        <button onclick="window.location.href='https://www.example.com';">
+            Zum Quiz Game
+        </button>
+        <div class="table">
+            <ul id="fileList"></ul>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js" defer></script>
+    <script type="module" src="datenbank.js" defer></script>
+</body>
+
+
+</html>
